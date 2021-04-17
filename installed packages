@@ -1,0 +1,7 @@
+Inside folder
+- npx create-react-app client
+- npm init --y
+- npm install react-router-dom
+- inside server 
+        npm install express socket.io@2.3.0
+        npm install mongoose   
