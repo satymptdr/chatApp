@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom';
 const RoomList = ({rooms}) => {
     return (
         <div>
-            {rooms && rooms.map(room=>(
-            <Link to={'/chat/'+room._id + '/' + room.name}key={room._id}>
+            {rooms && rooms.map(room=>( // map will create new array with key-->value pair
+            <Link to={'/chat/'+room._id + '/' + room.name} key={room._id}>
                 
             <Room  name ={room.name}/>
             </Link>))}

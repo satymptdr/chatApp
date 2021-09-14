@@ -7,7 +7,7 @@ const Messages = ({messages, user_id}) => {
         <STB className="messages">
             
             {/* {JSON.stringify(messages)} */}
-            {/* fecthing msg with loop */}
+            
             {messages.map((message,i)=>(
                 <Message key={message._id} message={message}
                 current_uid={user_id}/>

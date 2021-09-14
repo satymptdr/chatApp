@@ -10,7 +10,7 @@ const Home = () => {
   const [rooms, setRooms] = useState([]);
   const ENDPT = 'localhost:5000';
   useEffect(() => {
-    socket = io(ENDPT);
+    socket = io(ENDPT); 
     return () => {
       socket.emit('disconnect');
       socket.off();
@@ -26,7 +26,7 @@ const Home = () => {
 
   useEffect(() => {
     socket.on('room-created', room => {
-      setRooms([...rooms, room])
+      setRooms([...rooms, room]) //... means spread opertor eg. array,string
     })
   }, [rooms])
   useEffect(() => {
@@ -63,9 +63,7 @@ const Home = () => {
                     <label htmlFor="room">Room</label>
                   </div>
                 </div>
-                <button className="btn"> Create Room
-
-      </button>
+                <button className="btn"> Create Room </button>
               </form>
             </div>
             <div className="card-action">
