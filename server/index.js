@@ -18,7 +18,7 @@ const http = require('http').createServer(app);
 const mongoose = require('mongoose');
 const socketio = require('socket.io')
 const io = socketio(http);
-const mongoDB = "mongodb+srv://satym:12345@cluster0.bsfak.mongodb.net/chat-database?retryWrites=true&w=majority";
+const mongoDB = "mongodb://localhost/27017"; // connected with local host
 mongoose.connect(mongoDB,{useNewUrlParser: true,useUnifiedTopology: true}).then(()=>console.log('connected')).catch(err=>console.log(err));
 const {addUser,getUser, removeUser}= require('./helper');
 const Message = require('./models/Message');
