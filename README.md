@@ -24,7 +24,7 @@ Server
 ```
 > cd server
 > npm install
-> node server.js
+> node index.js
 ```
 
 Client
