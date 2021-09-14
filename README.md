@@ -23,7 +23,6 @@ Install required packages from npm
 Server
 ```
 > cd server
-> npm install
 > node index.js
 ```
 
